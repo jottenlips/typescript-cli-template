@@ -5,11 +5,15 @@
 ```console
 $ yarn
 $ yarn compile
-$ npm link
+$ yarn link
 ```
 
 
 ### Install 
+
+```console
+$ yarn publish
+```
 
 ```console
 $ yarn global add your-package
