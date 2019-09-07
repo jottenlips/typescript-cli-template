@@ -8,12 +8,13 @@ $ yarn compile
 $ yarn link
 ```
 
-
-### Install 
+### Publish
 
 ```console
 $ yarn publish
 ```
+
+### Install 
 
 ```console
 $ yarn global add your-package
