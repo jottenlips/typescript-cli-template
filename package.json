@@ -1,0 +1,36 @@
+{
+  "name": "project-name",
+  "version": "0.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "jest",
+    "check": "gts check",
+    "start": "yarn compile && node ./build/index.js",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "yarn run compile",
+    "pretest": "yarn run compile",
+    "posttest": "yarn run check"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": "",
+  "dependencies": {
+    "yargs": "^14.0.0"
+  },
+  "bin": {
+    "your-command": "./build/src/index.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.0.10",
+    "@types/yargs": "^13.0.2",
+    "gts": "^1.1.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "~3.5.0"
+  }
+}
